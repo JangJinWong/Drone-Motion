@@ -42,5 +42,5 @@ We will be optimizing flight of the drone using PS-Drone API. Our goal is to mak
 
 
 
-   [Video]: <https://drive.google.com/file/d/0B6ZrfwStVoaTalpZdU0tQlRYX3c/view>
+   [Video]: <https://drive.google.com/open?id=0B6ZrfwStVoaTalpZdU0tQlRYX3c>
    
