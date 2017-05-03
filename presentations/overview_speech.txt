@@ -1,0 +1,28 @@
+Looking back, I remember as a kid I always dreamed about having super powers. 
+Watching movies such as Harry Potter or Star Wars made me want to be a Wizard or a Jedi. 
+I truly believed that one day I would do incredible things with the move of a hand.
+
+Unfortunately, I never received an invitation to Hogwarts nor became one with the force. 
+The closest alternative was controlling characters in video games. And in recent times, 
+technologies such as the Wii U, Kinect, or VR have come close to satisfying our childhood dreams.
+
+But ask yourself, why video games, why not real life? Kids, teenagers, adults and even 
+seniors should all be able to experience the joy of using magic and feeling the force.
+All at an affordable cost!
+
+(click to next slide, "Drone Motion")
+
+Drones are known for being difficult to fly. Though this has recently improved with 
+self-flying software, we think we can make the experience more intuitive and eliminate 
+the learning curve. We will build a system that recognizes and classifies hand gestures, 
+and translates them to drone motion. Unlike other solutions that have used various sensors, 
+our system uses (the force) only images captured through a camera. We plan to use deep learning 
+methods to build our classifier.
+
+(click to next slide, “Project Overview”)
+
+In summary, although many of you were not admitted to Hogwarts, now you can experience 
+something similar to casting a spell or using the force. Using a simple camera, you will 
+be able to do incredible things with the move of a hand.
+
+Thank you, questions?
