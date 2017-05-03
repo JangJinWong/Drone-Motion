@@ -7,13 +7,13 @@
 
 ### 2. Group Management:
   - TriVi Tran - t1tran@ucsd.edu 
-        - Nothing
+    * Nothing
   - Hakan Erol - herol@ucsd.edu
-        - Nothing...
+    * Nothing...
   - Joji Asako - jasako@ucsd.edu
-        - Everything
+    * Everything
   - Soheil Karimi - skarimik@ucsd.edu
-        - Nothing minus 10 
+    * Nothing minus 10 
         
 In our group we don't necessarily assign exact roles to members, instead we all collaborate on each aspect of the project ensuring each and every one of us understands how everything works. Keeping the same philosophy, we mostly make decisions as a whole. There are cases however, where one member might be much more knowledgable on a certain topic and we will trust their judgment on certain decisions. Still though, the rest of the group would be consulted at first so everyone is on the same page. We meet every Monday, Wednesday, and Friday to spend a few hours looking at our progress and deciding how and what we should proceed to work on next. Outside of regular meeting hours, we stick to Slack for communication. Each week we assess our progress, taking a look at our specific goals and the big picture, ensuring we are on track. If we see that we are a little behind, we will meet on extra days of the week to get back on track. 
 
@@ -74,6 +74,6 @@ To improve the fluidity and intuitiveness of piloting the drone, we will spend t
 ### Repository Structure
 - presentations: contains all presentation powerpoints, speech practice, presentation related material.
 - code: contains all code files of the project.
-        -  droneMotion.py :  capture the images of a person with different hand gestures, feed these images to convolutional neural network, receive the scores (how sure it is) for each movement from CNN and use Discrete Bayes Filter to improve the accuracy. 
-        - droneMotion.ipynb : jupyter notebook version of droneMotion.py, include the sample images and graphs. Has nice format. :)
+    *   droneMotion.py :  capture the images of a person with different hand gestures, feed these images to convolutional neural network, receive the scores (how sure it is) for each movement from CNN and use Discrete Bayes Filter to improve the accuracy. 
+    * droneMotion.ipynb : jupyter notebook version of droneMotion.py, include the sample images and graphs. Has nice format. :)
 
