@@ -69,7 +69,5 @@ To improve the fluidity and intuitiveness of piloting the drone, we will spend t
 
 ### Repository Structure
 - presentations: contains all presentation powerpoints, speech practice, presentation related material.
-- code: contains all code files of the project.
-    *   droneMotion.py :  capture the images of a person with different hand gestures, feed these images to convolutional neural network, receive the scores (how sure it is) for each movement from CNN and use Discrete Bayes Filter to improve the accuracy. 
-    * droneMotion.ipynb : jupyter notebook version of droneMotion.py, include the sample images and graphs. Has nice format. :)
+
 
