@@ -27,44 +27,52 @@ In our group we don't necessarily assign exact roles to members, instead we all 
 
 
 ### 4. Milestones: 
-#####  Hand Gesture Detection: 5/4/17
+#####  Hand Gesture Detection: 5/4/17 (completed)
 #
-Due to Deep CNNs requiring lots of data, our team will capture many video samples of the hand gestures to create a dataset. We will then train our network to accurately classify these hand gestures using video frames. Our training results will be provided by visualizing the loss and accuracy of our network. On top of new training data, in order to maintain the highest level of accuracy of hand gesture detection, we will be using a calibration system. This system asks the user to perform the ten different gestures we have implemented in order to adjust to the specific person and background. Real time testing can then be done through a demo of our classifier, which will use both the CNN and a Discrete Bayes Filter.
-
-We plan to gather lots of data in different environments in order to keep training our CNN and increase it’s accuracy. On top of new training data, in order to maintain the highest level of accuracy of hand gesture detection, we will be using a calibration system. This system asks the user to perform the ten different gestures we have implemented in order to adjust to the specific person and background, ensuring reliablity of performance.
+Due to Deep CNNs requiring lots of data, our team will capture many video samples of the hand gestures to create a dataset. We will then train our network to accurately classify these hand gestures using video frames. Our training results will be provided by visualizing the loss and accuracy of our network. We plan to gather lots of data in different environments in order to keep training our CNN and increase it’s accuracy. On top of new training data, in order to maintain the highest level of accuracy of hand gesture detection, we will be using a calibration system. This system asks the user to perform the ten different gestures we have implemented in order to adjust to the specific person and background. Real time testing can then be done through a demo of our classifier, which will use both the CNN and a Discrete Bayes Filter.
 
 
-##### Deliverables
-- Training Images (Joji Asako) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
+
+###### Deliverables
+- Training Images (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
 - Graphs of Accuracy/Loss (Hakan Erol) - Visualize the performance of the CNN
-- Dynamic Visualization (Hakan Erol) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
+- Dynamic Visualization (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
 
 
-##### Piloting UAV: 5/11/17
+##### Piloting UAV: 5/11/17 (completed)
  #
 We will be using a fairly inexpensive drone for testing. The AR-Drone 2 can be controlled through a full featured API, written in and for Python, known as PS-Drone. We will connect to the drone through a laptop and control it with this API. We will test all the drone movements we are planning to implement. Then we will compare the piloting performance of the computer versus the mobile app provided by the drone’s manufacturer.
 
-Using the PS-Drone API we plan to test and improve the piloting of our drone through commands sent by a computer to the drone. We will write many scripts that send a variety of commands in order to understand how the drone reacts, allowing us to optimize how and when we send these commands. The goal is to achieve accurate flight with smooth transitions between motions.
+Using the PS-Drone API, we plan to test and improve the piloting of our drone through commands sent by a computer to the drone. We will write many scripts that send a variety of commands in order to understand how the drone reacts, allowing us to optimize how and when we send these commands. The goal is to achieve accurate flight with smooth transitions between motions.
 
-##### Deliverables
+###### Deliverables
 - Video Demo (Whole Team) - We will present a video demonstrating the piloting of our drone with its native app, which will then be compared to piloting using PS-Drone API  
 
-
-
-
-##### Connecting the Systems: 5/18/11
+##### Connecting the Systems: 5/18/17 (old)
 #
 In order to reach our end goal of actually controlling the drone with our hand gestures, we need to connect the detection system along with the PS-Drone API. We will integrate the API calls into the detection system so that the sum is as intuitive as we want it to be. Given a classified hand gesture, the appropriate command will be sent to the drone. 
 
-##### Deliverables
+###### Deliverables
 - Video Demo (Whole Team) - We will present a video demonstrating how the drone flies using our connected system. We will demonstrate all of our possible movements, showing the accuracy of our system. 
 
+###### Extend to 5/28/17 (update) 
+- Since the accuracy of our model is not very high when we remove the calibration, we decide to push this task back to the end of week 8. We want to focus on improve the performance of our model and generalize it. Also, pushing this task back will not affect our project because it is a last simple step which is integrating everything together.
 
-##### Optimizing Flight
+
+### 5. Sprint: 
+
+##### Generalize the model: 5/26/17 (update, currently working)
+ #
+The model that we are using need to have a calibration system in order to maintain high accuracy. This calibration system require the user to perform all hand gestures at the current location and let the model train on these hand gestures before using the model. This allow the model to adjust to the current setting (color of background and foreground). However, we want to spend a whole week to just working on improving the performance of CNN model and eventually, the model will be able to give a high performance without using the calibration system. Our ultimate goal is to have the model being able to recognize the hand gestures of a random person right away when they walk up in front of the camera. To achieve this goal, we have to gather varying training data by captureing hand gestures of many different people. We are also going to try many different techniques add it on top of the neural network.     
+###### Deliverables
+- Video demo (whole team): we will have all memebers walk up to the camera, doing different hand gestures and let the model detect each gestures. We will not calibrate the model beforehand for this task.  
+
+
+##### Optimizing Flight (6/5/17)
 #
 To improve the fluidity and intuitiveness of piloting the drone, we will spend time tweaking certain aspects of PS-Drone API calls. We will change certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
 
-##### Deliverables
+###### Deliverables
 - Video Demo (Whole Team) - We will present a video demonstrating flight before and after optimizing the flight of the drone.
 
 ### Repository Structure
