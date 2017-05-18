@@ -90,5 +90,7 @@ To improve the fluidity and intuitiveness of piloting the drone, we will spend t
 
 ### Repository Structure
 - presentations: contains all presentation powerpoints, speech practice, presentation related materials.
+- Movement Pics: contains the pictures of all 8 hand gestures, which are used to control the flight
+- Graphs: graph of accuracy and loss of CNN model
 
 
