@@ -37,7 +37,7 @@ Due to Deep CNNs requiring lots of data, our team will capture many video sample
 - Training Images (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
 - Graphs of Accuracy/Loss (Hakan Erol) - Visualize the performance of the CNN
 - Dynamic Visualization (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
-
+- [Video of hand gesture detection and a bar graph of probability distribution of all moves](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing)
 
 ##### Piloting UAV: 5/11/17 (completed)
  #
@@ -56,26 +56,27 @@ In order to reach our end goal of actually controlling the drone with our hand g
 - Video Demo (Whole Team) - We will present a video demonstrating how the drone flies using our connected system. We will demonstrate all of our possible movements, showing the accuracy of our system. 
 
 ###### Extend to 5/28/17 (update) 
-- Since the accuracy of our model is not very high when we remove the calibration, we decide to push this task back to the end of week 8. We want to focus on improve the performance of our model and generalize it. Also, pushing this task back will not affect our project because it is a last simple step which is integrating everything together.
+- Since the accuracy of our model is not very high when we remove the calibration, we decided to push this task back to the end of week 8. We want to focus on improving the performance of our model and generalize it. Also, pushing this task back will not affect our project because it is a last simple step, which is integrating everything together. Hakan and Trivi will work on this once we have everything ready. 
 
 
 ### 5. Sprint: 
 
 ##### Generalize the model: 5/26/17 (update, currently working)
  #
-The model that we are using need to have a calibration system in order to maintain high accuracy. This calibration system require the user to perform all hand gestures at the current location and let the model train on these hand gestures before using the model. This allow the model to adjust to the current setting (color of background and foreground). However, we want to spend a whole week to just working on improving the performance of CNN model and eventually, the model will be able to give a high performance without using the calibration system. Our ultimate goal is to have the model being able to recognize the hand gestures of a random person right away when they walk up in front of the camera. To achieve this goal, we have to gather varying training data by captureing hand gestures of many different people. We are also going to try many different techniques add it on top of the neural network.     
+The model that we are using currently needs to use a calibration system in order to maintain high accuracy. This calibration system requires the user to perform all hand gestures at the current location and let the model train on these hand gestures before using the model. This allows the model to adjust to the current setting (color of background and foreground). However, we want to spend a whole week on improving the performance of our CNN models and eventually, the model will be able to obtain a high performance without using the calibration system. Our ultimate goal is to have the model be able to recognize the hand gestures of any given person right away when they walk up to the camera. To achieve this goal, we have to gather varying training data by capturing hand gestures of many different people. We are also going to try many different methods to improve our neural network. Joji and Soheil will be responsible for this task. Hakan and Trivi will also help them out as well.
+
 ###### Deliverables
-- Video demo (whole team): we will have all memebers walk up to the camera, doing different hand gestures and let the model detect each gestures. We will not calibrate the model beforehand for this task.  
+- Video demo (whole team): we will have all memebers walk up to the camera, doing different hand gestures and let the model detect each gesture. We will not calibrate the model beforehand for this task.  
 
 
 ##### Optimizing Flight (6/5/17)
 #
-To improve the fluidity and intuitiveness of piloting the drone, we will spend time tweaking certain aspects of PS-Drone API calls. We will change certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
+To improve the fluidity and intuitiveness of piloting the drone, we will spend time tweaking certain aspects of PS-Drone API calls. We will change certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. The whole team will work on this since this is the last task of our project, we all will work on this after we finish everything (make the model become general and connect it to PS-Drone)
 
 ###### Deliverables
 - Video Demo (Whole Team) - We will present a video demonstrating flight before and after optimizing the flight of the drone.
 
 ### Repository Structure
-- presentations: contains all presentation powerpoints, speech practice, presentation related material.
+- presentations: contains all presentation powerpoints, speech practice, presentation related materials.
 
 
