@@ -34,12 +34,13 @@ Due to Deep CNNs requiring lots of data, our team will capture many video sample
 
 
 ###### Deliverables
-- Training Images (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
+- [Training Images](https://github.com/TriviTran/Drone-Motion/tree/master/Movement%20Pics) (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
 - Graphs of Accuracy/Loss (Hakan Erol) - Visualize the performance of the CNN
 - Dynamic Visualization (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
 - [Video of hand gesture detection and a bar graph of probability distribution of all moves](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing): 
     * rotate right/left: rotate the camera on the drone
     * move backward/forward/left/right: move the drone
+    * stop and land.
 
 ##### Piloting UAV: 5/11/17 (completed)
  #
@@ -49,6 +50,10 @@ Using the PS-Drone API, we plan to test and improve the piloting of our drone th
 
 ###### Deliverables
 - Video Demo (Whole Team) - We will present a video demonstrating the piloting of our drone with its native app, which will then be compared to piloting using PS-Drone API  
+- [Video of flying with native app](https://drive.google.com/file/d/0Bztoe_bhpw1tdl9NTFdHaThGQ28/view?usp=sharing)
+- [Video of flying drone with PS-Drone API via a laptop](https://drive.google.com/file/d/0Bztoe_bhpw1tTVUtbTRMMnIxOWM/view?usp=sharing)
+    * Observe how in the video displaying flight with the drone's native app, the movements are jerky and hard to control. With PS-Drone, although the drone crashed due to human error, the movements of the drone are clearly much smoother and flow together much better. The main advantage of using the PS-Drone API is the fact that the drone actually moves in the direction you tell it to, where as with the phone it is quite out of control and has a mind of it's own. This along with the much smoother flight makes it a viable solution for our system. 
+    
 
 ##### Connecting the Systems: 5/18/17 (old)
 #
