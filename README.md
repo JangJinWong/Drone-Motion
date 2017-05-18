@@ -37,7 +37,9 @@ Due to Deep CNNs requiring lots of data, our team will capture many video sample
 - Training Images (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
 - Graphs of Accuracy/Loss (Hakan Erol) - Visualize the performance of the CNN
 - Dynamic Visualization (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
-- [Video of hand gesture detection and a bar graph of probability distribution of all moves](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing)
+- [Video of hand gesture detection and a bar graph of probability distribution of all moves](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing): 
+    * rotate right/left: rotate the camera on the drone
+    * move backward/forward/left/right: move the drone
 
 ##### Piloting UAV: 5/11/17 (completed)
  #
