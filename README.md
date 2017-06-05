@@ -55,7 +55,6 @@ We used a fairly inexpensive drone for testing. The AR-Drone 2 can be controlled
 Using the PS-Drone API, we tested and improved the piloting of our drone through commands sent by a computer to the drone. We wrote many scripts that send a variety of commands in order to understand how the drone reacts, allowing us to optimize how and when we send these commands. The goal was to achieve accurate flight with smooth transitions between motions.
 
 ###### Deliverables
-- Video Demo (Whole Team) - We will present a video demonstrating the piloting of our drone with its native app, which will then be compared to piloting using PS-Drone API  
 - [Video of flying with native app](https://drive.google.com/file/d/0Bztoe_bhpw1tdl9NTFdHaThGQ28/view?usp=sharing)
 - [Video of flying drone with PS-Drone API via a laptop](https://drive.google.com/file/d/0Bztoe_bhpw1tTVUtbTRMMnIxOWM/view?usp=sharing)
     * Observe how in the video displaying flight with the drone's native app, the movements are jerky and hard to control. With PS-Drone, although the drone crashed due to human error, the movements of the drone are clearly much smoother and flow together much better. The main advantage of using the PS-Drone API is the fact that the drone actually moves in the direction you tell it to, where as with the phone it is quite out of control and has a mind of it's own. This along with the much smoother flight makes it a viable solution for our system. 
