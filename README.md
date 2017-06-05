@@ -1,4 +1,5 @@
-# Drone Motion
+# Drone Motion 
+
 
 ![N|Solid](https://www.firstpersonview.co.uk/blog/wp-content/uploads/2015/09/Inspire-1-PRO-1-1024x569.png)
 
@@ -72,7 +73,7 @@ In order to reach our end goal of actually controlling the drone with our hand g
 To improve the fluidity and intuitiveness of piloting the drone, we spent time tweaking certain aspects of PS-Drone API calls. We changed certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
 
 ###### Deliverables
-- Video Demo (Whole Team) - final flight in parking lot
+- [Video Demo](https://drive.google.com/file/d/0BzmXqNEDKKRmdEtoSkh2dzdrQ3c/view?usp=sharing) - final flight in parking lot
 
 # 5. Future work: 
 
