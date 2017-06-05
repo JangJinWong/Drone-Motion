@@ -2,10 +2,10 @@
 
 ![N|Solid](https://www.firstpersonview.co.uk/blog/wp-content/uploads/2015/09/Inspire-1-PRO-1-1024x569.png)
 
- ### 1. Abstract:
+ # 1. Abstract:
 >The current methods of piloting drones are difficult and not easily accessible. The average person might have an interest in drones, but does not want to spend time going through the learning curve. This exposed a void which could be filled. We present a sensor-free, accurate, and intuitive system for hand motion controlled UAV piloting. Our method efficiently classifies hand gestures from simple video capture, translating them to drone motion. Our implementation takes advantage of the strength of deep convolutional neural networks (CNN) to achieve high accuracies. In order to eliminate discrepancies due to different people and backgrounds during classification, a simple calibration technique is used to maintain reliability. Furthermore, a Discrete Bayes Filter is used to sequentially process frames and estimate the state of the system. We hope our model will serve as a platform for people to easily and intuitively fly drones.
 
-### 2. Group Management:
+# 2. Group Management:
   - TriVi Tran - t1tran@ucsd.edu 
   - Hakan Erol - herol@ucsd.edu
   - Joji Asako - jasako@ucsd.edu
@@ -16,7 +16,7 @@ In our group we don't necessarily assign exact roles to members, instead we all 
   
 
   
-### 3. Technology:
+# 3. Technology:
 - [AR Drone 2.0 Elite Edition](https://www.parrot.com/us/drones/parrot-ardrone-20-elite-edition#parrot-ardrone-20-elite-edition) - A standard affordable product made by [Parrot](https://www.parrot.com/us/#drones-fpv). We chose to use this drone because it was able to do all simple flight movements, which met our requirements for this project. 
 - [PS Drone API](http://www.playsheep.de/drone/index.html) - An API written in python, specifically for the AR Drone 2.0. It allows us to control the flight movement of the drone easily and to use it along with our machine learning classifier. 
 - [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network) - a deep learning method or a classifier that was used to predict the flight commands. The classifier requires a learning process before it can actually predicts a command. It first needs to process the images of each hand gesture, captured by the webcam, and update the belief of each movement. Then, it will try to guess the flight commands upon a new image that it receives. This allow us to use our hand gestures and translate them to drone flight commands.
@@ -26,8 +26,8 @@ In our group we don't necessarily assign exact roles to members, instead we all 
 
 
 
-### 4. Milestones: 
-#####  Hand Gesture Detection:
+# 4. Milestones: 
+#### I.  Hand Gesture Detection:
 #
 Due to Deep CNNs requiring lots of data, our team captured many video samples of the hand gestures to create a dataset. We then trained our network to accurately classify these hand gestures using video frames. Our training results were provided by visualizing the loss and accuracy of our network. We still had to gather lots of data in different environments in order to keep training our CNN and to increase its accuracy. On top of new training data, in order to maintain the highest level of accuracy of hand gesture detection, we used a calibration system. This system asks the user to perform the ten different gestures we have implemented in order to adjust to the specific person and background. Real time testing can then be done through a demo of our classifier, which will use both the CNN and a Discrete Bayes Filter.
 ###### Final Adjustment
@@ -48,7 +48,7 @@ There were two problems that we encounters when the camera is located in front o
 - [Dynamic Visualization](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing)  (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
 
 
-##### Piloting UAV:
+#### II. Piloting UAV:
  #
 We used a fairly inexpensive drone for testing. The AR-Drone 2 can be controlled through a full featured API, written in and for Python, known as PS-Drone. We connected to the drone through a laptop and control it with this API. We tested all the drone movements we were planning to implement. Then we compared the piloting performance of the computer to the mobile app provided by the drone’s manufacturer.
 
@@ -61,23 +61,23 @@ Using the PS-Drone API, we tested and improved the piloting of our drone through
     * Observe how in the video displaying flight with the drone's native app, the movements are jerky and hard to control. With PS-Drone, although the drone crashed due to human error, the movements of the drone are clearly much smoother and flow together much better. The main advantage of using the PS-Drone API is the fact that the drone actually moves in the direction you tell it to, where as with the phone it is quite out of control and has a mind of it's own. This along with the much smoother flight makes it a viable solution for our system. 
     
 
-##### Connecting the Systems: 
+#### III. Connecting the Systems: 
 #
 In order to reach our end goal of actually controlling the drone with our hand gestures, we need to connect the detection system along with the PS-Drone API. We will integrate the API calls into the detection system so that the system is as intuitive as we want it to be. Given a classified hand gesture, the appropriate command will be sent to the drone. 
 
 ###### Deliverables
 - Video Demo (Whole Team) - plan to have video of soheil flight the drone in center hall time
 
-##### Optimizing Flight (6/5/17)
+#### IV. Optimizing Flight:
 #
 To improve the fluidity and intuitiveness of piloting the drone, we spent time tweaking certain aspects of PS-Drone API calls. We changed certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
 
 ###### Deliverables
 - Video Demo (Whole Team) - final flight in parking lot
 
-### 5. Future work: 
+# 5. Future work: 
 
-##### Generalize the model: 5/26/17 (update, currently working)
+##### Generalize the model: 
  #
 The model that we are using currently needs to use a calibration system in order to maintain high accuracy. This calibration system requires the user to perform all hand gestures at the current location and let the model train on these hand gestures before using the model. This allows the model to adjust to the current setting (color of background and foreground). However, we want to spend a whole week on improving the performance of our CNN models and eventually, the model will be able to obtain a high performance without using the calibration system. Our ultimate goal is to have the model be able to recognize the hand gestures of any given person right away when they walk up to the camera. To achieve this goal, we have to gather varying training data by capturing hand gestures of many different people. We are also going to try many different methods to improve our neural network. Joji and Soheil will be responsible for this task. Hakan and Trivi will also help them out as well.
 
