@@ -36,14 +36,9 @@ There were two problems that we encounters when the camera is located in front o
 
 ###### Deliverables
 
-- [Training Images](https://github.com/TriviTran/Drone-Motion/tree/master/Movement%20Pics) (whole team) - Prepare a set of sample images of different hand gestures to visualize the dataset. This gives the audience a sense of what the CNN is training on. 
-- Graphs of Accuracy/Loss (Hakan Erol) - Visualize the performance of the CNN
-    * Training Accuracy:
-    #
-    ![Graph of Traini](https://github.com/TriviTran/Drone-Motion/blob/master/Graphs/Training%20Accuracy.png?raw=true)
-    * Training Loss:
-    ###
-    ![Graph of Training Loss](https://github.com/TriviTran/Drone-Motion/blob/master/Graphs/Training%20Loss.png?raw=true)
+- [Sample Images of Hand Gestures with camera angle in front of a person](https://github.com/TriviTran/Drone-Motion/tree/master/Movement%20Before%20Final%20Adjustment) - A set of sample images of different hand gestures for visualization. This gives the audience a sense of what the CNN is training on. These are the images of hand gestures before we change the angle of the camera.
+- [Sample Images of Hand Gestures with camera angle from bottom-up](https://github.com/TriviTran/Drone-Motion/tree/master/Movement%20After%20Final%20Adjustment): These are the images of hand gestures after making the final adjustment to this part of the project. The CNN perform really well with this new adjusment.
+
 
 
 - [Dynamic Visualization](https://drive.google.com/file/d/0B6ZrfwStVoaTMVR4cHZabURON3c/view?usp=sharing)  (whole team) - In real time, we will demo the classifier’s probability distribution of our hand gestures with easy to understand graphs
@@ -66,14 +61,14 @@ Using the PS-Drone API, we tested and improved the piloting of our drone through
 In order to reach our end goal of actually controlling the drone with our hand gestures, we need to connect the detection system along with the PS-Drone API. We will integrate the API calls into the detection system so that the system is as intuitive as we want it to be. Given a classified hand gesture, the appropriate command will be sent to the drone. 
 
 ###### Deliverables
-- Video Demo (Whole Team) - plan to have video of soheil flight the drone in center hall time
+- [Video Demo](https://drive.google.com/file/d/0B6ZrfwStVoaTalpZdU0tQlRYX3c/view?usp=sharing) - this video show a person fly the drone before optimizing the flight. Notice that the transition between directions is not really smooth. 
 
 #### IV. Optimizing Flight:
 #
 To improve the fluidity and intuitiveness of piloting the drone, we spent time tweaking certain aspects of PS-Drone API calls. We changed certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
 
 ###### Deliverables
-- [Video Demo](https://drive.google.com/file/d/0BzmXqNEDKKRmdEtoSkh2dzdrQ3c/view?usp=sharing) - final flight in parking lot
+- [Video Demo](https://drive.google.com/file/d/0BzmXqNEDKKRmdEtoSkh2dzdrQ3c/view?usp=sharing) - video of a person fly the drone with optimized flight. Notice that the transition between directions is smooth.
 
 # 5. Future work: 
 
