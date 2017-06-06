@@ -61,14 +61,14 @@ Using the PS-Drone API, we tested and improved the piloting of our drone through
 In order to reach our end goal of actually controlling the drone with our hand gestures, we need to connect the detection system along with the PS-Drone API. We will integrate the API calls into the detection system so that the system is as intuitive as we want it to be. Given a classified hand gesture, the appropriate command will be sent to the drone. 
 
 ###### Deliverables
-- [Video Demo](https://drive.google.com/file/d/0B6ZrfwStVoaTalpZdU0tQlRYX3c/view?usp=sharing) - this video show a person fly the drone before optimizing the flight. Notice that the transition between directions is not really smooth. 
+- [Video Demo](https://drive.google.com/file/d/0B6ZrfwStVoaTalpZdU0tQlRYX3c/view?usp=sharing) - this video show a team member flies the drone before optimizing the flight. Notice that the transition between directions is not really smooth. 
 
 #### IV. Optimizing Flight:
 #
 To improve the fluidity and intuitiveness of piloting the drone, we spent time tweaking certain aspects of PS-Drone API calls. We changed certain parameters such as flight speed, transitions between motions, etc. in order to make the user feel like the drone is truly connected to their hand gestures, and to make the experience as enjoyable as possible. 
 
 ###### Deliverables
-- [Video Demo](https://drive.google.com/file/d/0BzmXqNEDKKRmdEtoSkh2dzdrQ3c/view?usp=sharing) - video of a person fly the drone with optimized flight. Notice that the transition between directions is smooth.
+- [Video Demo](https://drive.google.com/file/d/0BzmXqNEDKKRmdEtoSkh2dzdrQ3c/view?usp=sharing) - video of a team member flies the drone with optimized flight. Notice that the transition between directions is smooth.
 
 # 5. Future work: 
 
