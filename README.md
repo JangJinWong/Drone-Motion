@@ -1,6 +1,6 @@
 # Drone Motion 
 [FINAL DEMO VIDEO](https://drive.google.com/file/d/0B00v03a6GBTtNVVmVGY4d3RTaVk/view?usp=sharing)
-
+[FINAL REPORT](https://github.com/TriviTran/Drone-Motion/blob/master/presentations/Final_Report_145.pdf)
 
 ![N|Solid](https://www.firstpersonview.co.uk/blog/wp-content/uploads/2015/09/Inspire-1-PRO-1-1024x569.png)
 
@@ -25,11 +25,16 @@ Optimizing the flight motion.
 
 
 # 3. Group Management:
-  - TriVi Tran - t1tran@ucsd.edu 
+#
+
+![TeamImage](https://github.com/TriviTran/Drone-Motion/blob/master/extra/TeamImg.png?raw=true)
   - Hakan Erol - herol@ucsd.edu
   - Joji Asako - jasako@ucsd.edu
-   - Soheil Karimi - skarimik@ucsd.edu
-         
+  - Soheil Karimi - skarimik@ucsd.edu
+  - TriVi Tran - t1tran@ucsd.edu 
+
+
+
 In our group we don't necessarily assign exact roles to members, instead we all collaborate on each aspect of the project ensuring each and every one of us understands how everything works. Keeping the same philosophy, we mostly make decisions as a whole. There are cases however, where one member might be much more knowledgable on a certain topic and we will trust their judgment on certain decisions. Still though, the rest of the group would be consulted at first so everyone is on the same page. We meet every Monday, Wednesday, and Friday to spend a few hours looking at our progress and deciding how and what we should proceed to work on next. Outside of regular meeting hours, we stick to Slack for communication. Each week we assess our progress, taking a look at our specific goals and the big picture, ensuring we are on track. If we see that we are a little behind, we will meet on extra days of the week to get back on track. 
 
   
@@ -39,9 +44,9 @@ In our group we don't necessarily assign exact roles to members, instead we all 
 - [AR Drone 2.0 Elite Edition](https://www.parrot.com/us/drones/parrot-ardrone-20-elite-edition#parrot-ardrone-20-elite-edition) - A standard affordable product made by [Parrot](https://www.parrot.com/us/#drones-fpv). We chose to use this drone because it was able to do all simple flight movements, which met our requirements for this project. The drone is inexpensive which would be appropriate for the beginner or anyone who have not fly a drone before. This would allow the user to experience how to fly the drone without worrying too much about damaging the drone.
 - [PS Drone API](http://www.playsheep.de/drone/index.html) - An API written in python, specifically for the AR Drone 2.0. It allows us to control the flight movement of the drone easily and to use it along with our machine learning classifier. The API is programmable and allow us to improve the flight movement by adjusting the speed of the drone with different parameter. 
 - [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network) - A state-of-the-art deep learning method or a classifier that was used to predict the flight commands. CNN, in general, has been widely used for image and video recognition. It mimics the way of how the brain learning new things that we see with our eyes.  The CNN has many layers in between the image and the output. Each layer will have a different representation of the image. As the image go through all the layers, the CNN will be able to learn and identify the most important features for each movement/output and will be able to label the image with the correct movement. The classifier requires a learning process before it can actually predicts a command. It first needs to process the images of each hand gesture, captured by the webcam, and update the belief of each movement. Then, it will try to guess the flight commands upon a new image that it receives. This allow us to use our hand gestures and translate them to drone flight commands. Our CNN has 18 layers and was pre-trained with millions of general images. We, then, train the model with our hand gesture images, which include several images of each movement (move right, move left, move forward, move backward, rotate right, rotate left, stop, and landing). By training the model with these images, the model can now recognize each movement accurately when there is a new unlabeled image feeding into the model. This allow us to feed the images captures from the camera into the model and acquire the labeled movement/ output from the model to use to command the drone. The picture below is a simple diagram demonstrating how CNN work. Note that is diagram only show a few layers in order for reader to understand the workflow of CNN.
-
+![CNN](https://github.com/TriviTran/Drone-Motion/blob/master/extra/CNN.PNG?raw=true)
 - [Discrete Bayes Filter](https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation) - a mathematical algorithm that updates the belief of the current movement using the belief of previous movements as a hint. This allows us to improve prediction accuracy before sending the actual command to the drone by taking into account the sequential nature of video frames. The algorithm also helps eliminate some noises from our classifier's predictions. For example, when we have multiple continous frames(images) labeled with the same movement but one image was suddenly misclassified by our model and was labeled with a different movement, we can consider this as a noise to our the classification. Discrete Bayes Filter update the belief of each movement as they receive an output from CNN model. The belief of one movement will increase as it receives the same movement again and again. When it receive a different movement suddenly, what it has believed on will be changed slightly and will not impact the result of the whole system. The picture below demonstrates how Discrete Bayes Filter work with our CNN model. We can see the the probability of right is very high due to the multiple continous frames that were labeled with ‘move right’. Any misclassified movement will not impact the performance of our system.
-
+![Probability of Discrete Bayes Filter](https://github.com/TriviTran/Drone-Motion/blob/master/extra/DiscreteBayesFilter.PNG?raw=true)
 
 
 
@@ -55,7 +60,9 @@ After training, real time testing can be performed easily by performing the hand
 ###### Final Adjustment
 There were two problems that we encounters when the camera is located in front of the user: 
 1) Our CNN model can't differentiate the gesture of forward and backward. 
+![Front camera](https://github.com/TriviTran/Drone-Motion/blob/master/extra/frontcamera.PNG?raw=true)
 2) It requires calibration step before using the system. We overcome this challenge by changing the angle of the camera to bottom-up, which means the camera will be located on the ground and look up. This change will fix the problems that we had and it also make our model become general, which means a random user can walk up to the camera and control the drone without go through the calibration step. However, the calibration step is also nice to have because it improves the performance and giving our model an opportunity to become more general.  
+![Bottom Up camera](https://github.com/TriviTran/Drone-Motion/blob/master/extra/bottomup.PNG?raw=true)
 
 ###### Deliverables
 
@@ -85,6 +92,7 @@ In order to reach our end goal of actually controlling the drone with our hand g
 
 ###### Deliverables
 - [Video Demo](https://drive.google.com/file/d/0B6ZrfwStVoaTalpZdU0tQlRYX3c/view?usp=sharing) - this video show a team member flies the drone before optimizing the flight. Notice that the transition between directions is not really smooth. 
+![connecting system](https://github.com/TriviTran/Drone-Motion/blob/master/extra/connecting.PNG?raw=true)
 
 #### IV. Optimizing Flight:
 #
@@ -110,7 +118,8 @@ We have successfully created a system that can accurately classify the hand move
 
 ### Repository Structure
 - presentations: contains all presentation powerpoints, speech practice, presentation related materials.
-- Movement Pics: contains the pictures of all 8 hand gestures, which are used to control the flight
-- Graphs: graph of accuracy and loss of CNN model
+- Movement After Final Adjustment: hand movements after changing the camera angle to bottom-up
+- Movement Before Final Adjustment: hand movements with camera angle in front of the person
+- extra: folder for pictures
 
 
